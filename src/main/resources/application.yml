@@ -1,0 +1,12 @@
+management:
+  endpoint:
+    metrics:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: prometheus, health, loggers
+  metrics:
+    export:
+      prometheus:
+        enabled: true
