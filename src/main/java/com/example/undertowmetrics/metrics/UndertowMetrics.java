@@ -17,6 +17,7 @@ import java.util.Optional;
 @Component
 @Slf4j
 public class UndertowMetrics implements MeterBinder {
+
     // can be more than one worker. See server.undertow.threads.io
     // # The default is derived from the number of available processors.
     private static final String OBJECT_NAME = "org.xnio:type=Xnio,provider=\"nio\",worker=\"XNIO-1\"";
